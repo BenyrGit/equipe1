@@ -17,3 +17,5 @@ Closes #
 - [ ] Les tests passent localement
 - [ ] Le code respecte les conventions (Conventional Commits)
 - [ ] Pas de secrets dans le code
+- [ ] L'analyse du linter ne trouve pas d'erreurs
+- [ ] L'analyse statique ne trouve pas d'erreurs

@@ -6,7 +6,6 @@ use Tests\TestCase;
 
 class CalculateurControllerTest extends TestCase
 {
-
     // —— Tests prixTtc —————————————————————————————————————————————————————————————
     public function test_calcul_prix_ttc_retourne_le_bon_resultat(): void
     {
@@ -55,7 +54,6 @@ class CalculateurControllerTest extends TestCase
             ->assertJson(['message' => 'Le prix hors taxes ne peut pas être négatif.']);
     }
 
-
     // —— Tests appliquerRemise —————————————————————————————————————————————————————————————
 
     public function test_calcul_remise_retourne_le_bon_resultat(): void
@@ -81,7 +79,7 @@ class CalculateurControllerTest extends TestCase
 
         // Assert
         $response->assertStatus(422)
-            ->assertJson(['message' => "Le prix ne peut pas être négatif."]);
+            ->assertJson(['message' => 'Le prix ne peut pas être négatif.']);
     }
 
     public function test_calcul_remise_negative_retourne_erreur_metier(): void
